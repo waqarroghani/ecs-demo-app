@@ -1,7 +1,3 @@
-
-
-
-
 # CI/CD Pipeline with GitHub Actions and Docker
 
 ## Overview
@@ -33,13 +29,17 @@ aws-ecs-demo-app/
 ├── Dockerfile # Docker configuration
 ├── package.json # Node.js dependencies
 ├── package-lock.json
-├── 
+├── task-definition.json # AWS ECS task definition
 └── README.md # Project documentation
 
-- screenshots
-     ```markdown
-     ![GitHub Actions Workflow](images/github-actions.png)
-     ![Live App](images/live-app.png)
+
+
+## Screenshots
+### GitHub Actions Workflow
+![GitHub Actions Workflow](images/github-actions.png)
+
+### Live App
+![Live App](images/live-app.png)
 
 ## How It Works
 1. **GitHub Actions** triggers on every push to the `main` branch.
@@ -63,16 +63,3 @@ AWS_REGION
 ECR_REPOSITORY_URI
 
 Push changes to the main branch to trigger the pipeline.
-
-
-
-
-
-
-
-
-
-
-
-
----
