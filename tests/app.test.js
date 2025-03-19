@@ -1,15 +1,15 @@
 const request = require('supertest');
-const { app,server } = require('../app'); // Import both app and server
+const { app,server } = require('../app'); 
 
 describe('App Endpoints', () => {
-  // Start the server before all tests
+  
   beforeAll((done) => {
     server.on('listening', () => {
       done();
     });
   });
 
-  // Close the server after all tests
+  
   afterAll((done) => {
     server.close(() => {
       done();
